@@ -77,6 +77,11 @@
     gap: 2%;
 }
 
+.apresentacao__conteudo__imagem {
+    max-width: 100%;
+    height: auto;
+}
+
 .apresentacao__conteudo__texto {
     font-family: var(--fonte-segundaria);
     font-size: 3rem;
