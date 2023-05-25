@@ -13,6 +13,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 
@@ -88,14 +89,18 @@
     font-weight: 400;
     color: var(--cor-segundaria);
 }
+    
+.rodape {
+    background-color: var(--cor-segundaria);    
+}
 
 .apresentacao__redes__socias {
     background-color: var(--cor-segundaria);
     display: flex;
     justify-content: center;
     gap: 5%;
-    padding: 1%;
-    margin-bottom: 2px;
+    padding: 2%;
+    border-bottom: 2px solid var(--cor-primaria);
     
 }
 
@@ -103,12 +108,18 @@
     width: 100px;
     height: 100px;
 }
-    
-.rodape {
-    background-color: var(--cor-segundaria);
-}
 
 .rodape__logo {
-    display: block;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2%
+}
+
+
+@media (max-width: 768px) {
+
+    .apresentacao__conteudo {
+        flex-direction: column;
+    }
+    
 }
