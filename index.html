@@ -3,109 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>GlowEco</title>
 </head>
 <body>
     <header class="cabecalho">
-        <a href="index.html">
-            <img src="./assets/logo-gloweco.svg" alt="Logotipo GlowEco" class="logo">
-        </a>
-        <div class="navbar">
-            <a href="index.html">
-                <img src="./assets/home-buttom.svg" alt="Icone Home" class="cabecalho__buttom">
-            </a>
-            <a href="index.html">
-                <img src="./assets/service-buttom.svg" alt="Icone Home" class="cabecalho__buttom">
-            </a>
-            <a href="index.html">
-                <img src="./assets/contact-buttom.svg" alt="Icone Home" class="cabecalho__buttom">
-            </a>
-        </div>
+        <a href="index.html"><img src="./assets/logo.svg" alt="Imagem da logo" class="logo"></a>
     </header>
     <main>
-        <section class="banner">
+        <section class="conteudo">
+            <h1 class="conteudo__titulo">conheça um novo jeito de manter <strong> seu carro </strong> limpo</h1>
+            <a href="#" class="conteudo__callaction">Agende agora</a>
+        </section>
+        <section class="cards">
+            <h2 class="cards__titulo">conheça os nossos serviços</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><a href="#"><img src="./assets/card1.svg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./assets/card2.svg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./assets/card3.svg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./assets/card4.svg" alt=""></a></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-            <h2 class="banner__titulo">conheça um novo jeito de manter <strong>seu carro</strong> limpo</h2>
-
-            <a href="#" class="banner__buttom">Agende agora</a>
+            </div>
 
         </section>
-        <section class="titulo">
-           
-            <h1>Bem-vindo a GlowEco<br>
-                Estética automotiva</h1>
-
-        </section>
-        <section class="conteudo direita">
-             
-            <div class="conteudo__texto">
-
-                <p>A GlowEco é uma nova empresa no mercado de estética automotiva, dedicada a fornecer serviços de lavagem ecológica de primeira classe. Com uma equipe apaixonada por carros e um compromisso inabalável com a sustentabilidade, estamos empenhados em oferecer aos nossos clientes uma experiência conveniente, eficiente e ecologicamente responsável.</p> 
-                
-                <p>Nossa missão é cuidar do seu veículo, mantendo-o limpo, brilhante e protegido, enquanto reduzimos o impacto ambiental. Acreditamos que é possível obter resultados excepcionais sem comprometer o planeta, e é por isso que utilizamos apenas técnicas inovadoras e produtos eco-friendly em nossos serviços de estética automotiva.</p>
-
-            </div>   
-            <img src="./assets/imghomeeco.svg" alt="Imagem ecológica" class="conteudo__imagem">
-        </section>
-        <section class="conteudo esquerda">
-
-
-            <div class="conteudo__texto">
-
-                <p>Com profissionais experientes e altamente treinados, a GlowEco garante que cada veículo receba um tratamento personalizado e de qualidade. Nossos especialistas utilizam técnicas avançadas e produtos sustentáveis para proporcionar resultados incríveis, enquanto preservamos os recursos naturais.</p>
-
-                <p>Além disso, nos destacamos ao oferecer um serviço conveniente e flexível. Nossa equipe vai até você, seja em sua casa ou empresa, proporcionando comodidade e economizando seu tempo. Acreditamos que a estética automotiva de qualidade deve estar sempre ao seu alcance.</p>
-            </div> 
-        
-            <img src="./assets/imghomefrota.svg" alt="Imagem de uma frota de caminhões" class="conteudo__imagem">
-        </section>
-        <section class="conteudo texto">   
-            <div class="conteudo__texto">
-
-                <p>Na GlowEco, nos orgulhamos de nossa paixão pela excelência e sustentabilidade. Valorizamos a satisfação do cliente e trabalhamos incansavelmente para superar suas expectativas. Escolha a GlowEco para cuidar da beleza do seu veículo, sabendo que você está contribuindo para um futuro mais verde e sustentável.</p>
-
-            </div> 
-
-        </section>
-
-        <section class="redes__sociais">
-            
-            <a href="#">
-                <img src="./assets/ic_facebook.svg" alt="">
-            </a>
-           
-            <a href="#"><img src="./assets/ic_instagram.svg" alt=""></a>
-           
-            <a href="#"><img src="./assets/ic_whatsapp.svg" alt=""></a>
-           
-            <a href="#"><img src="./assets/ic_youtube.svg" alt=""></a>
-        </section>
-
+         
     </main>
     <footer>
-        <section class="rodape__mobile">
+        <nav class="navbar__mobile">
+            <ul class="navbar__links">
+                <li><a href="#"><img src="./assets/ic-home.svg" alt="Home link"></a></li>
+                <li><a href="#"><img src="./assets/ic-aboutus.svg" alt="Quem somos link"></a></li>
+                <li><a href="#"><img src="./assets/ic-service.svg" alt="Serviços link"></a></li>
+                <li><a href="#"><img src="./assets/ic-contact.svg" alt="Cantato link"></a></li>
+            </ul>
+        </nav>
 
-            <a href="index.html">
-            <img src="./assets/ic_home.svg" alt="Icone Home">
-            </a>
-            <a href="index.html">
-                <img src="./assets/ic_car.svg" alt="Icone Home">
-            </a>
-            <a href="index.html">
-                <img src="./assets/ic_contact.svg" alt="Icone Home">
-            </a>
-        </section>
-
-        <section class="rodape__tablet">
-            <a href="index.html">
-                <img src="./assets/logo-gloweco-footer.svg" alt="Logotipo GlowEco">
-            </a>
-            <p>CNPJ: 43.567558/0001-66</p>
-
-        </section>
     </footer>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+  
+    pagination: {
+    
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
+</script>
 </html>

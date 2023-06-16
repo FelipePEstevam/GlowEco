@@ -1,25 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
-@import url("./header.css");
-@import url("./banner.css");
-@import url("./conteudo.css");
-@import url("./footer.css");
-
 :root {
-    --cor-primaria: #10564F; 
-    --cor-segundaria:  #ADC9C5;
-    --cor-hover: #6CB0A8; 
-
-    --font: 'Montserrat', sans-serif;
-    --font-mobile: 16px;
-    --font-tablet: 24px;
-    --font-desktop: 32px
+    --cor-primaria: #557B83;
+    --cor-segundaria: #E5EFC1;
+    --cor-hover: #39AEA9;
 }
 
-body {
-    background-color: var(--cor-primaria);
-    font-family: var(--font);
-    font-size: var(--font-mobile);
+body{
+    background-image: url("../assets/bg-img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     font-weight: 400;
     color: var(--cor-segundaria);
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 16px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+}
+
+.conteudo__titulo {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+
+}
+
+.conteudo__titulo strong {
+    color: var(--cor-hover);
+}
+
+.conteudo__callaction {
+    white-space: nowrap;
+    background-color: var(--cor-hover);
+    font-weight: 800;
+    color: var(--cor-primaria);
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.conteudo__callaction:active {
+    background-color: var(--cor-primaria);
+    color: var(--cor-hover);
+}
+
+.cards__titulo {
+    background-color: var(--cor-primaria);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 240px;
+    padding: 8px;
+}
+
+.swiper {
+    padding: 16px 16px 24px 16px;
+}
+
+.swiper-slide img {
+    width: 100%;    
+}
+
+.swiper-pagination {
+    position: top;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    padding: 8px;
 }
