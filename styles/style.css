@@ -7,13 +7,30 @@
 }
 
 body{
-    background-image: url("../assets/bg-img.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--cor-segundaria);
+}
+
+.home {
+    background-image: url("../assets/bg-img.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+ 
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85vh;
+}
+
+ 
+.quemsomos {
+    background-color: var(--cor-hover);
 }
 
 .cabecalho {
@@ -21,17 +38,25 @@ body{
     padding: 16px;
 }
 
+.logo {
+    width: 20%;
+}
+
 .conteudo {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 16px;
-    gap: 8px;
+    gap: 24px;
+    margin-top: 24px;
+
 }
 
 .conteudo__titulo {
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 20vw;
     color: var(--cor-primaria);
     text-transform: uppercase;
 
@@ -44,6 +69,7 @@ body{
 .conteudo__callaction {
     white-space: nowrap;
     background-color: var(--cor-hover);
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--cor-primaria);
     padding: 16px;
@@ -55,24 +81,49 @@ body{
     color: var(--cor-hover);
 }
 
+.quemsomos__conteudo {
+    background-color: var(--cor-primaria);
+    margin: 0 16px 16px 16px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.quemsomos__titulo {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.quemsomos__texto {
+    padding: 16px;
+}
+
 .cards__titulo {
     background-color: var(--cor-primaria);
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
-    margin-top: 240px;
-    padding: 8px;
+    padding: 16px;
 }
 
 .swiper {
-    padding: 16px 16px 24px 16px;
+    padding: 24px;
 }
 
 .swiper-slide img {
-    width: 100%;    
+    width: 100%;
+       
 }
 
 .swiper-pagination {
     position: top;
+}
+
+.navbar__mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .navbar__links {
