@@ -3,91 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
     <title>GlowEco</title>
 </head>
-<body class="home">
-    <header class="cabecalho">
-        <a href="index.html"><img src="./assets/logo.svg" alt="Imagem da logo" class="logo"></a>
-    </header>
-    <main class="principal">
-        <section class="container">
-            <nav class="navbar__tablet">
+
+<body>
+    
+    <header>
+        <div class="cabecalho" id="home">
+                
+            <a href="index.html" class="logo"><img src="./assets/logo.svg" alt="Imagem da logo" class="logo__imagem"></a>
+        
+            <nav class="navbar">
+
                 <ul class="navbar__links">
-                    <li><a href="index.html"><img src="./assets/ic-home-tb.svg" alt="Home link"></a></li>
-                    <li><a href="quemsomos.html"><img src="./assets/ic-aboutus-tb.svg" alt="Quem somos link"></a></li>
-                    <li><a href="servicos.html"><img src="./assets/ic-service-tb.svg" alt="Serviços link"></a></li>
-                    <li><a href="contato.html"><img src="./assets/ic-contact-tb.svg" alt="Cantato link"></a></li>
+                    <li>
+                        <a href="index.html" class="navbar__link">
+                            <ion-icon name="home"></ion-icon><h6>Home</h6> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quemsomos.html" class="navbar__link">
+                            <ion-icon name="people"></ion-icon><h6>Quem somos</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servicos.html" class="navbar__link">
+                            <ion-icon name="car"></ion-icon><h6>Serviços</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="navbar__link">
+                            <ion-icon name="chatbubbles"></ion-icon>
+                            <h6>Contato</h6>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        <div class="conteudo">
+        
+            <section class="banner">
             
-            <h1 class="conteudo__titulo">conheça um novo jeito de manter <strong> seu carro </strong> limpo</h1>
-            <a href="#" class="conteudo__callaction">Agende agora</a>
+                <h1 class="banner__titulo">conheça um novo jeito de manter <strong> seu carro </strong> limpo</h1>
+                <a href="#" class="banner__botao">Agende agora</a>
+            </section>
+        </header>
         </div>
-        </section>
         
-        
-        <section class="cards">
-            
-            <h2 class="cards__titulo">conheça os nossos serviços</h2>
-            
-            <div class="swiper">
-               
-                <div class="swiper-wrapper">
+    <main>
 
-                <div class="swiper-slide"><a href="https://www.instagram.com/glowecowash/"><img src="./assets/card1.svg" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img src="./assets/card2.svg" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img src="./assets/card3.svg" alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img src="./assets/card4.svg" alt=""></a></div>
-                </div>
-            
-                <div class="swiper-pagination"></div>
+        <h2 class="cards__titulo">conheça os nossos serviços</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <section class="cards">
+                    <div class="card">
+                        <img src="./assets/lavagem-eco.svg" alt="" class="card__img">
+                        <div class="card__tx">
+                            <h2 class="card__titulo">Lavagem Ecológica</h2>
+                            <a href="" class="card__botao">Saiba mais</a>
+                        </div>
+                    </div>
+    
+                </sectio>
+            </div>
+              <div class="swiper-slide">
+                <section class="cards">
+
+                    <div class="card">
+                        <img src="./assets/lavagem-eco.svg" alt="" class="card__img">
+                        <div class="card__tx">
+                            <h2 class="card__titulo">Lavagem Ecológica</h2>
+                            <a href="" class="card__botao">Saiba mais</a>
+                        </div>
+                    </div>
+        
+                </sectio>
+              </div>
+              <div class="swiper-slide">
+                <section class="cards">
+        
+                    <div class="card">
+                        <img src="./assets/lavagem-eco.svg" alt="" class="card__img">
+                        <div class="card__tx">
+                            <h2 class="card__titulo">Lavagem Ecológica</h2>
+                            <a href="" class="card__botao">Saiba mais</a>
+                        </div>
+                    </div>
+        
+                </sectio>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+
+            <h2 class="cards__titulo">Nos siga nas redes sociais</h2>
+
+            <div class="redes__sociais ">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
 
             </div>
-
-        </section>
-         
+    
+        
     </main>
     <footer>
-        <nav class="navbar__mobile">
-            <ul class="navbar__links">
-                <li><a href="index.html"><img src="./assets/ic-home.svg" alt="Home link"></a></li>
-                <li><a href="quemsomos.html"><img src="./assets/ic-aboutus.svg" alt="Quem somos link"></a></li>
-                <li><a href="servicos.html"><img src="./assets/ic-service.svg" alt="Serviços link"></a></li>
-                <li><a href="contato.html"><img src="./assets/ic-contact.svg" alt="Cantato link"></a></li>
-            </ul>
-        </nav>
-
-        <section class="redes">
-            <ul class="redes__links">
-                <li><a href="#" class="contato"><img src="./assets/ic_instagram-rp.svg" alt="Logo Instagram"></a></li>
-                <li><a href="#" class="contato"><img src="./assets/ic_facebook-rp.svg" alt="Logo Facebook"></a></li>
-                <li><a href="#" class="contato"><img src="./assets/ic_youtube-rp.svg" alt="Logo Youtube"></a></li>
-            </ul>
-
-        </section>
 
         <section class="rodape">
-            <a href="index.html"><img src="./assets/logo-rodape.svg" alt="Logo GlowEco"></a>CNPJ: 43.567558/0001-66
+            <a href="index.html"><img src="./assets/logo-rodape.svg" alt="Logo GlowEco"><h6>CNPJ: 43.567558/0001-66</h6></a>
         </section>
 
     </footer>
-    
-</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 1.2,
-    spaceBetween: 10,
-  
-    pagination: {
-    
-    el: '.swiper-pagination',
-    type: 'bullets',
+    const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 10,
+        loop: true,
+
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
+
 });
 </script>
+</body>
 </html>

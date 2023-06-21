@@ -1,0 +1,171 @@
+#home {
+    background-image: url("../assets/bg-img.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-areas:
+    'logo logo logo'
+    'nada banner nada'
+    'nada banner nada'
+    'nada banner nada'
+}
+
+.logo {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    justify-self: center;
+    padding-top: 16px;
+}
+
+.banner {
+    grid-row: 2/5;
+    grid-column: 2/3;
+}
+
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--cor-primaria);
+    padding: 8px 0;
+}
+
+.navbar__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8rem;
+    padding: 8px 0;
+    row-gap: 2px;
+    color: var(--cor-segundaria);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+ion-icon {
+    font-size: 24px;
+  }
+
+.banner {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    text-align: center;
+    justify-self: center;
+}
+
+.banner__titulo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.banner__botao {
+    white-space: nowrap;
+    background-color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    padding: 16px;
+    border-radius: 4px;
+    width: 65%;
+}
+
+.banner__titulo strong {
+    color: var(--cor-hover);
+}
+
+
+@media (min-width: 720px) {
+    .cabecalho {
+        padding: 24px o;
+        display: grid;
+        justify-items: center;
+        align-items: start;
+        grid-template-areas:
+        'navbar logo logo'
+        'navbar banner banner'
+        'navbar banner banner'
+        'navbar banner banner'
+        'navbar banner banner'
+    }
+
+    .logo {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        
+    }
+
+    .navbar {
+        grid-column: 1/2;
+        grid-row: 1/6;
+    }
+
+    .banner {
+        grid-column: 1/4;
+        grid-row: 2/6;
+        width: 50%;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .logo__imagem {
+        flex-grow: 1;
+    }
+
+    .navbar__links {
+        flex-direction: column;
+        background-color: transparent;
+        row-gap: 40px;
+        padding-left: 16px;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .navbar__link {
+        flex-direction: row;
+        gap: 8px;
+        color: var(--cor-primaria);
+    }
+
+    .navbar h6 {
+        color: transparent;
+    }
+
+    .navbar h6:hover {
+        color: var(--cor-primaria);
+    }
+
+    ion-icon {
+        font-size: 40px;
+    }
+
+    .banner__titulo {
+        font-size: 3rem;
+    }
+
+    .banner__botao {
+        font-size: 2rem;
+    }
+
+}

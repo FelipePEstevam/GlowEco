@@ -1,0 +1,22 @@
+.rodape {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .rodape {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--cor-primaria);
+        padding: 16px;
+        color: var(--cor-segundaria);
+    }
+
+    .rodape a {
+        color: var(--cor-segundaria);
+        font-weight: 500;
+    
+    }
+
+}
