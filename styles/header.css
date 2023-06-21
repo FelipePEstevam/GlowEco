@@ -3,7 +3,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-    
 }
 
 .cabecalho {
@@ -22,6 +21,10 @@
     padding-top: 16px;
 }
 
+#menu {
+    display: none;
+}
+
 .banner {
     grid-row: 2/5;
     grid-column: 2/3;
@@ -34,6 +37,7 @@
     width: 100%;
     z-index: 9999;
 }
+
 
 .navbar__links {
     display: flex;
@@ -54,6 +58,10 @@
     white-space: nowrap;
 }
 
+.ativa {
+    color: var(--cor-terciaria);
+}
+
 ion-icon {
     font-size: 24px;
   }
@@ -71,9 +79,10 @@ ion-icon {
 .banner__titulo {
     font-size: 2rem;
     font-weight: 800;
+    padding: 16px;
     color: var(--cor-primaria);
     text-transform: uppercase;
-    width: 90%;
+    
 }
 
 .banner__botao {
@@ -93,6 +102,9 @@ ion-icon {
 
 
 @media (min-width: 720px) {
+    #home {
+        background-image: url('../assets/bg-img-tablet.svg');
+    }
     .cabecalho {
         padding: 24px o;
         display: grid;
@@ -123,12 +135,24 @@ ion-icon {
         width: 50%;
     }
 
-    .logo {
-        display: flex;
+    .navbar {
+        position: absolute;
+        top: 7%;
+        left: -102%;
+        background-color: var(--cor-hover);
+        border-radius: 4px;
+        margin-top: 16px;
+        width: 25%;
     }
 
-    .logo__imagem {
-        flex-grow: 1;
+    #menu {
+        display: block;
+        position: fixed;
+        padding: 16px;
+        top: 0;
+        left: 0;
+        color: var(--cor-primaria);
+        font-size: 32px;
     }
 
     .navbar__links {
@@ -138,34 +162,40 @@ ion-icon {
         padding-left: 16px;
     }
 
-    .navbar {
-        position: static;
-    }
-
     .navbar__link {
+        color: var(--cor-primaria);
         flex-direction: row;
         gap: 8px;
-        color: var(--cor-primaria);
-    }
-
-    .navbar h6 {
-        color: transparent;
-    }
-
-    .navbar h6:hover {
-        color: var(--cor-primaria);
+        
     }
 
     ion-icon {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .banner__titulo {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .banner__botao {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
+   .navbar.open {
+        top: 1;
+        left: 0; 
+        transition: all .50s ease;   
+   }
+
+   .ativa {
+    color: var(--cor-terciaria);
+   }
+
+}
+
+@media (min-width: 1440px) {
+    #home {
+        background-image: url('../assets/bg-img-desk.svg');
+    }
+    
 }
