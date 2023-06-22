@@ -50,10 +50,15 @@
     width: 50%;
 }
 
+.card__botao:hover {
+    color: var(--cor-primaria);
+    background-color: var(--cor-hover);
+    border: 1px solid var(--cor-primaria);
+}
+
 .redes__sociais {
     display: flex;
     justify-content: space-evenly;
-    color: var(--cor-primaria);
     padding: 16px 0;
     margin-bottom: 72px;
 }
@@ -62,8 +67,27 @@
     font-size: 40px;
 }
 
+.redes {
+    color: var(--cor-primaria);
+}
+
+.redes:hover {
+    color: var(--cor-hover);
+}
+
+.prenext {
+    display: none;
+}
+
 @media (min-width: 720px) {
     .redes__sociais {
         margin-bottom: 0;
     }
+}
+
+@media (min-width: 1440px) {
+    .prenext {
+        display: block;
+    }
+    
 }

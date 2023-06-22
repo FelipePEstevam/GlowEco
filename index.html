@@ -22,8 +22,7 @@
             <a href="index.html" class="logo"><img src="./assets/logo.svg" alt="Imagem da logo" class="logo__imagem"></a>
             
             <nav class="navbar">
-
-                <li><ion-icon name="menu-outline" id="menu"></ion-icon></li>
+                <ion-icon name="menu-outline" id="menu"></ion-icon>
 
                 <ul class="navbar__links">
                     <li>
@@ -119,19 +118,23 @@
                 </sectio>
               </div>
             </div>
-            <!-- If we need pagination -->
+
             <div class="swiper-pagination"></div>
           
-            <!-- 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>-->
-
-            <h2 class="cards__titulo">Nos siga nas redes sociais</h2>
+            <h2 class="cards__titulo">Siga nossas redes sociais</h2>
 
             <div class="redes__sociais ">
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-youtube"></ion-icon>
+                <a href="https://instagram.com/glowecowash" class="redes">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://instagram.com/glowecowash" class="redes">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://instagram.com/glowecowash" class="redes">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+                
+                
 
             </div>
     
@@ -150,21 +153,27 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
-        speed: 400,
-        spaceBetween: 10,
+        slidesPerView: 1,
+        spaceBetween: 5,
         loop: true,
-
-
         pagination: {
             el: '.swiper-pagination',
         },
+        
+        breakpoints: {
+            720: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+            1440: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+        },
+        }
+       
 
+        
 });
 </script>
 </body>

@@ -63,6 +63,11 @@
     white-space: nowrap;
 }
 
+.navbar__link:hover {
+    color: var(--cor-hover);
+
+}
+
 .ativa {
     color: var(--cor-terciaria);
 }
@@ -151,7 +156,7 @@ ion-icon {
         background-color: var(--cor-hover);
         border-radius: 4px;
         width: 20%;
-        height: 35%;
+        height: auto;
         transition: all .50s ease;
         padding: 16px;
     }
@@ -214,5 +219,67 @@ ion-icon {
     #home {
         background-image: url('../assets/bg-img-desk.svg');
     }
+
+    .cabecalho {
+        grid-area:
+        'logo navbar'
+        'banner banner'
+        'banner banner'
+        'banner banner'
+        'banner banner'
+        
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .logo {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        align-self: start;
+        justify-self: left;
+        padding-left: 24px;
+        
+    }
+
+    .logo img {
+        width: 150%;
+    }
     
+
+    .navbar {
+        position:static;
+        background-color: transparent;
+        padding: 0;
+        grid-row: 1/2;
+        grid-column: 2/4;
+        align-self: start;
+        justify-self: right;
+        width: 100%;
+    }
+
+    .banner {
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+
+    .navbar__links {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: flex-end;
+        padding: 24px;
+        gap: 32px;
+    
+    }
+
+    .navbar__link {
+        flex-direction: row;
+        font-size: 24px;
+        padding: 0;
+        gap: 16px;
+    }
+    
+   
 }

@@ -12,6 +12,9 @@
 
     --swiper-pagination-bottom: auto;
     --swiper-pagination-top: -4px;
+    --swiper-navigation-color: var(--cor-terciaria);
+    --swiper-navigation-top-offset: 30%;
+    --swiper-navigation-sides-offset: 20px;
 }
 
 body{
